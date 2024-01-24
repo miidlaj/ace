@@ -8,8 +8,8 @@ const AboutUs = () => {
           <h1 className="text-[80px]">About Us</h1>
 
           <p className="text-[16px] font-poppins">
-            At Ace Assured, we{"'"}re passionate about helping small and
-            medium-sized businesses succeed in today{"'"}s digital age. With
+            At Ace Assured, we&apos;re passionate about helping small and
+            medium-sized businesses succeed in today&apos;s digital age. With
             years of experience in the industry, our team of experts has the
             skills and expertise to help you achieve your business goals.
           </p>

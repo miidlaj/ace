@@ -7,7 +7,7 @@ const GetInTouch = () => {
     <>
       <div className="mx-52 my-auto">
         <h1 className="text-[90px]">
-          Let{"'"}s Get In <br /> Touch
+          Let&apos;s Get In <br /> Touch
         </h1>
 
         <div className="flex justify-between gap-5 items-start">
@@ -57,7 +57,7 @@ const GetInTouch = () => {
                   placeholder=""
                 />
                 <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-white duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-white peer-focus:dark:text-white">
-                  What{"'"}s your full name?{" "}
+                  What&apos;s your full name?{" "}
                 </label>
               </div>
 
@@ -68,7 +68,7 @@ const GetInTouch = () => {
                   placeholder=""
                 />
                 <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-white duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-white peer-focus:dark:text-white">
-                  What{"'"}s your email address
+                  What&apos;s your email address
                 </label>
               </div>
 
