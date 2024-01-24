@@ -1,20 +1,37 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        black: "#000",
+        white: "#fff",
+        gray: "#111",
+      },
+      spacing: {},
+      fontFamily: {
+        "nightcore-demo": "'Nightcore Demo'",
+        poppins: "Poppins",
+        "new-york-large": "'New York Large'",
+        "new-york": "'New York'",
+        inter: "Inter",
+      },
+      borderRadius: {
+        "43xl": "62px",
       },
     },
+    fontSize: {
+      xl: "20px",
+      "21xl": "40px",
+      "41xl": "60px",
+      lg: "18px",
+      "81xl": "100px",
+      sm: "14px",
+      base: "16px",
+      inherit: "inherit",
+    },
   },
-  plugins: [],
+  corePlugins: {
+    preflight: false,
+  },
 };
-export default config;
