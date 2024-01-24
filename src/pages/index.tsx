@@ -10,7 +10,7 @@ export default function Home() {
 
 
 
-    <div className="w-full relative bg-black h-[6999px] overflow-hidden text-left text-81xl text-white font-new-york">
+    {/* <div className="w-full relative bg-black h-[6999px] overflow-hidden text-left text-81xl text-white font-new-york">
       <div className="absolute top-[2584px] left-[calc(50%_-_629px)] w-[1258.4px] h-[2777px] text-41xl">
         <div className="absolute top-[0px] left-[calc(50%_-_368.8px)] w-[737.3px] h-[175px]">
           <div className="absolute top-[0px] left-[calc(50%_-_368.65px)] w-[737.3px] h-[175px]">
@@ -596,7 +596,7 @@ export default function Home() {
         alt=""
         src="/ace-logo-1.svg"
       />
-    </div>
+    </div> */}
     </>
   );
 }
