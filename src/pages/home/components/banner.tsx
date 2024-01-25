@@ -15,14 +15,12 @@ const Banner = () => {
         </div>
 
         <Image
-          className="absolute top-[100px] right-0 z-10"
+          className="absolute top-[100px] right-0 z-10 inner-shadow shadow-img"
           alt="Banner"
           src="/rectangle-15852@2x.png"
           width={620}
           height={445}
         />
-
-        
       </div>
     </>
   );

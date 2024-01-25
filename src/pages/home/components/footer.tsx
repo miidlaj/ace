@@ -1,5 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -60,7 +66,11 @@ const Footer = () => {
               +91 7356140099
             </a>
 
-            <div></div>
+            <div className="flex justify-between pt-10">
+              <FaFacebookF size={18} color="white" />
+              <FaInstagram size={18} color="white" />
+              <FaXTwitter size={18} color="white" />
+            </div>
           </div>
         </div>
 

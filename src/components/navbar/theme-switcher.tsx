@@ -1,17 +1,55 @@
+"use client";
+
+import Image from "next/image";
 import React from "react";
 
 const ThemeSwitcher = () => {
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  const handleToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <>
-      <div className="flex items-center justify-center w-full">
-        <label htmlFor="toggleB" className="flex items-center cursor-pointer">
-          <div className="relative">
-            <input type="checkbox" id="toggleB" className="sr-only" />
-            <div className="block bg-white w-14 h-8 rounded-full" />
-            <div className="dot absolute left-1 top-1 bg-black w-6 h-6 rounded-full transition" />
-          </div>
-        </label>
-      </div>
+       <div
+       className="w-[80px] -m-1"
+       >
+         <input
+           type="checkbox"
+           id="toggleSwitch"
+           onChange={handleToggle}
+           checked={isDarkMode}
+           className="hidden"
+
+         />
+         <label
+           htmlFor="toggleSwitch"
+           className={`relative cursor-pointer`}
+         >
+           <Image
+             className={`absolute top-0 left-0 transform transition duration-500 ease-in-out ${
+               isDarkMode ? "opacity-100" : "opacity-0"
+             }`}
+             src={"/dark-mode.png"}
+             alt={"Moon"}
+             width={70}
+             height={35}
+           />
+ 
+           <Image
+             className={`absolute top-0 left-0 transform transition duration-500 ease-in-out ${
+               isDarkMode ? "opacity-0" : "opacity-100"
+             }`}
+             src={"/light-mode.png"}
+             alt={"Sun"}
+             width={70}
+             height={35}
+           />
+         </label>
+       </div>
+
+     
     </>
   );
 };
