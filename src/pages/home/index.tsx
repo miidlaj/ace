@@ -7,8 +7,8 @@ import AboutUs from "../../components/home/about-us";
 import Expertise from "../../components/home/expertise";
 import GetInTouch from "../../components/home/get-in-touch";
 import RecentWorks from "../../components/home/recent-works";
-import Stairs from "../../components/stair_animation/index";
-import ScrollAnimate from "@/components/stair_animation/scroll-animation";
+import Stairs from "../../components/animation/index";
+import ScrollAnimate from "@/components/animation/scroll-animation";
 
 const inter = Inter({ subsets: ["latin"] });
 

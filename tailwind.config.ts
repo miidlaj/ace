@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -7,6 +8,8 @@ module.exports = {
         black: "#000",
         white: "#fff",
         gray: "#111",
+        primary: "hsl(var(--primary))",
+        secondary: "hsl(var(--secondary))",
       },
       spacing: {},
       fontFamily: {
@@ -15,19 +18,21 @@ module.exports = {
         "new-york-large": "'New York Large'",
         "new-york": "'New York'",
         inter: "Inter",
+        
       },
       borderRadius: {
         "43xl": "62px",
       },
     },
     fontSize: {
-      xl: "20px",
-      "21xl": "40px",
-      "41xl": "60px",
-      lg: "18px",
-      "81xl": "100px",
       sm: "14px",
       base: "16px",
+      lg: "18px",
+      xl: "20px",
+      "2xl": "30px",
+      "3xl": "40px",
+      "4xl": "60px",
+      "5xl": "90px",
       inherit: "inherit",
     },
   },

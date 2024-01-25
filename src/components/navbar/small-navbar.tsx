@@ -30,7 +30,7 @@ export default function SmallNavbar() {
                 y: 5,
               },
             }}
-            className="w-10 bg-white h-px block"
+            className="w-10 bg-primary h-px block"
           ></motion.span>
           <motion.span
             variants={{
@@ -41,7 +41,7 @@ export default function SmallNavbar() {
                 opacity: 0,
               },
             }}
-            className="w-10 bg-white h-px block"
+            className="w-10 bg-primary h-px block"
           ></motion.span>
           <motion.span
             variants={{
@@ -53,7 +53,7 @@ export default function SmallNavbar() {
                 y: -5,
               },
             }}
-            className="w-10 bg-white h-px block"
+            className="w-10 bg-primary h-px block"
           ></motion.span>
         </motion.div>
         <AnimatePresence>
@@ -89,7 +89,7 @@ export default function SmallNavbar() {
                 initial="hide"
                 animate="show"
                 exit="hide"
-                className="fixed inset-0 bg-black p-6 flex flex-col justify-center space-y-10 lg:hidden"
+                className="fixed inset-0 bg-secondary p-6 flex flex-col justify-center space-y-10 lg:hidden"
               >
                 <motion.ul
                   variants={{
@@ -105,24 +105,24 @@ export default function SmallNavbar() {
                   className="list-none space-y-6"
                 >
                   <li>
-                    <a href="#" className="text-[40px] font-thin text-white">
+                    <a href="#" className="text-[40px] font-thin text-primary">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-[40px] font-thin text-white">
+                    <a href="#" className="text-[40px] font-thin text-primary">
                       Services
                     </a>
                   </li>
 
                   <li>
-                    <a href="#" className="text-[40px] font-thin text-white">
+                    <a href="#" className="text-[40px] font-thin text-primary">
                       Company
                     </a>
                   </li>
 
                   <li>
-                    <a href="#" className="text-[40px] font-thin text-white">
+                    <a href="#" className="text-[40px] font-thin text-primary">
                       Contact Us
                     </a>
                   </li>
@@ -138,7 +138,7 @@ export default function SmallNavbar() {
                       opacity: 1,
                     },
                   }}
-                  className="w-full h-px bg-white/30"
+                  className="w-full h-px bg-primary/30"
                 ></motion.div>
                 <motion.ul
                   variants={{
@@ -153,21 +153,27 @@ export default function SmallNavbar() {
                   }}
                   className="list-none flex justify-center gap-x-4"
                 >
-                  <div className="flex justify-between gap-10 pt-10">
+                  <div className="justify-between gap-10 pt-10 hidden dark:flex">
                     <li>
-                      
-                        <FaFacebookF size={25} color="white" />
-              
+                      <FaFacebookF size={25} color="white" />
                     </li>
                     <li>
-                    
-                        
-                        <FaInstagram size={25} color="white" />
-                     
+                      <FaInstagram size={25} color="white" />
                     </li>
                     <li>
-                   
-                        <FaXTwitter size={25} color="white" />
+                      <FaXTwitter size={25} color="white" />
+                    </li>
+                  </div>
+
+                  <div className="flex justify-between gap-10 pt-10 dark:hidden">
+                    <li>
+                      <FaFacebookF size={25} color="black" />
+                    </li>
+                    <li>
+                      <FaInstagram size={25} color="black" />
+                    </li>
+                    <li>
+                      <FaXTwitter size={25} color="black" />
                     </li>
                   </div>
                 </motion.ul>

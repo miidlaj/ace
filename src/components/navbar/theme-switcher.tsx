@@ -1,55 +1,66 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 
+const images = ["/dark-mode.png", "/light-mode.png"];
 const ThemeSwitcher = () => {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
 
   const handleToggle = () => {
-    setIsDarkMode(!isDarkMode);
+    setTheme(theme === "dark" ? "light" : "dark");
   };
+
+  const { setTheme, theme } = useTheme();
+
+  React.useEffect(() => {
+    if (theme === "dark") {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }, [theme]);
 
   return (
     <>
-       <div
-       className="w-[80px] -m-1"
-       >
-         <input
-           type="checkbox"
-           id="toggleSwitch"
-           onChange={handleToggle}
-           checked={isDarkMode}
-           className="hidden"
+      <div className="flex flex-col relative">
+        <div className="w-[80px] -m-1 ">
+          <input
+            type="checkbox"
+            id="toggleSwitch"
+            onChange={handleToggle}
+            checked={isDarkMode}
+            className="hidden"
+          />
+          <label htmlFor="toggleSwitch" className={`relative cursor-pointer`}>
+            <Image
+              className={`absolute top-0 left-0 transform transition duration-300 ease-in-out ${
+                isDarkMode ? "opacity-100 " : "opacity-0 "
+              }`}
+              src={"/dark-mode.png"}
+              alt={"Moon"}
+              width={70}
+              height={35}
+            />
 
-         />
-         <label
-           htmlFor="toggleSwitch"
-           className={`relative cursor-pointer`}
-         >
-           <Image
-             className={`absolute top-0 left-0 transform transition duration-500 ease-in-out ${
-               isDarkMode ? "opacity-100" : "opacity-0"
-             }`}
-             src={"/dark-mode.png"}
-             alt={"Moon"}
-             width={70}
-             height={35}
-           />
- 
-           <Image
-             className={`absolute top-0 left-0 transform transition duration-500 ease-in-out ${
-               isDarkMode ? "opacity-0" : "opacity-100"
-             }`}
-             src={"/light-mode.png"}
-             alt={"Sun"}
-             width={70}
-             height={35}
-           />
-         </label>
-       </div>
+            <Image
+              className={`absolute top-0 left-0 transform transition duration-300 ease-in-out ${
+                isDarkMode ? "opacity-0 " : "opacity-100"
+              }`}
+              src={"/light-mode.png"}
+              alt={"Sun"}
+              width={70}
+              height={35}
+            />
+          </label>
+        </div>
 
-     
+        <h1 className="absolute -bottom-7 font-thin font-nightcore-demo text-base rotate-180">Hey{" " + " "} Batman</h1>
+
+      </div>
+
     </>
   );
 };

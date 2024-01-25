@@ -6,18 +6,26 @@ const Banner = () => {
     <>
       <div className="relative md:mx-52 flex justify-start items-center h-screen">
         <div className="z-20 relative text-center md:text-left">
-          <h1 className="text-[50px] md:text-[100px] capitalize font-new-york-large flex items-center font-thin">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[100px] capitalize font-new-york-large flex items-center font-thin">
             Stay ahead with our exclusive Insights
           </h1>
-          <h5 className="text-[20px] capitalize leading-[30px] font-poppins font-thin">
+          <h5 className="md:text-xl text-lg capitalize leading-[30px] font-poppins font-thin">
             Digital Solutions For Everyday Business
           </h5>
         </div>
 
         <Image
-          className="absolute top-[100px] right-0 z-10 inner-shadow shadow-img"
+          className="absolute top-[100px] right-0 z-10 inner-shadow shadow-img hidden dark:block"
           alt="Banner"
-          src="/rectangle-15852@2x.png"
+          src="/banner-dark.png"
+          width={620}
+          height={445}
+        />
+
+<Image
+          className="absolute top-[100px] right-0 z-10 inner-shadow shadow-img dark:hidden"
+          alt="Banner"
+          src="/banner-light.png"
           width={620}
           height={445}
         />

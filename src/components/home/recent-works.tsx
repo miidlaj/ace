@@ -4,17 +4,19 @@ import React from "react";
 const RecentWorks = () => {
   return (
     <>
-      <div className="md:mx-52 flex flex-col gap-20 py-32">
+      <div className="md:mx-10 lg:mx-20 xl:mx-40 2xl:mx-52 flex flex-col items-center gap-20 py-32">
         <div className="text-center">
-          <h1 className="text-[45px] md:text-[90px]">Recent Works</h1>
-          <p className="text-[18px] font-poppins">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[100px] ">
+            Recent Works
+          </h1>
+          <p className="text-base md:text-lg font-poppins">
             Explore our portfolio, a quick glimpse into our most recent works in
             web and digital marketing solutions.
           </p>
         </div>
 
         <div className="font-poppins flex flex-col gap-16">
-          <div className="flex md:flex-row md:gap-0 gap-10 flex-col justify-between">
+          <div className="flex lg:flex-row md:gap-5 gap-10 flex-col justify-between">
             <div className="flex flex-col gap-7">
               <Image
                 src={"/Ishwarayan.png"}
@@ -32,13 +34,13 @@ const RecentWorks = () => {
                 className="md:hidden"
               />
 
-              <div className="flex justify-between">
+              <div className="flex justify-between w-auto">
                 <div className="flex flex-col gap-2">
                   <p className="underline text-[18px]">Ishwarayan</p>
                   <p className="text-[14px]">Animation</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline outline-white outline-2 bg-transparent text-white py-2 px-4 rounded-full">
+                <button className="flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
                     className=""
@@ -67,13 +69,13 @@ const RecentWorks = () => {
                 className="md:hidden"
               />
 
-              <div className="flex justify-between">
+              <div className="flex justify-between w-auto">
                 <div className="flex flex-col gap-2">
                   <p className="underline text-[18px]">Tara Fabrics</p>
                   <p className="text-[14px]">Product Design</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline outline-white outline-2 bg-transparent text-white py-2 px-4 rounded-full">
+                <button className="flex font-new-york-large gap-2 items-center outline border-none outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
                     className=""
@@ -87,14 +89,22 @@ const RecentWorks = () => {
             </div>
           </div>
 
-          <div className="flex md:flex-row md:gap-0 gap-10 flex-col justify-between">
+          <div className="flex lg:flex-row md:gap-5 gap-10 flex-col justify-between">
             <div className="flex flex-col gap-7">
               <Image
                 src={"/hackit-mockup.png"}
                 alt="Jayson & jonson"
                 height={681}
                 width={1110}
-                className="hidden md:flex"
+                className="hidden xl:flex"
+              />
+
+              <Image
+                src={"/hackit-mockup.png"}
+                alt="Jayson & jonson"
+                height={429}
+                width={700}
+                className="hidden md:flex xl:hidden"
               />
 
               <Image
@@ -105,13 +115,13 @@ const RecentWorks = () => {
                 className="md:hidden"
               />
 
-              <div className="flex justify-between">
+              <div className="flex justify-between w-auto">
                 <div className="flex flex-col gap-2">
                   <p className="underline text-[18px]">Hackit</p>
                   <p className="text-[14px]">Product Design</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline outline-white outline-2 bg-transparent text-white py-2 px-4 rounded-full">
+                <button className="flex font-new-york-large gap-2 items-center outline border-none outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
                     className=""
@@ -125,7 +135,7 @@ const RecentWorks = () => {
             </div>
           </div>
 
-          <div className="flex md:flex-row md:gap-0 gap-10 flex-col justify-between">
+          <div className="flex lg:flex-row md:gap-5 gap-10 flex-col justify-between">
             <div className="flex flex-col gap-7">
               <Image
                 src={"/jayson&jonson.png"}
@@ -148,7 +158,7 @@ const RecentWorks = () => {
                   <p className="text-[14px]">User experience</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline outline-white outline-2 bg-transparent text-white py-2 px-4 rounded-full">
+                <button className="flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
                     className=""
@@ -183,7 +193,7 @@ const RecentWorks = () => {
                   <p className="text-[14px]">Art Direction</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline outline-white outline-2 bg-transparent text-white py-2 px-4 rounded-full">
+                <button className="flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
                     className=""
