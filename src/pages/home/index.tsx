@@ -1,12 +1,12 @@
 import ThemeSwitcher from "@/components/navbar/theme-switcher";
 import { Inter } from "next/font/google";
-import NavBar from "./components/nav-bar";
-import Banner from "./components/banner";
-import Footer from "./components/footer";
-import AboutUs from "./components/about-us";
-import Expertise from "./components/expertise";
-import GetInTouch from "./components/get-in-touch";
-import RecentWorks from "./components/recent-works";
+import NavBar from "../../components/home/nav-bar";
+import Banner from "../../components/home/banner";
+import Footer from "../../components/home/footer";
+import AboutUs from "../../components/home/about-us";
+import Expertise from "../../components/home/expertise";
+import GetInTouch from "../../components/home/get-in-touch";
+import RecentWorks from "../../components/home/recent-works";
 import Stairs from "../../components/stair_animation/index";
 import ScrollAnimate from "@/components/stair_animation/scroll-animation";
 

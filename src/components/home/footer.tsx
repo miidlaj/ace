@@ -10,10 +10,10 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="mx-52  pb-10">
+      <div className="md:mx-52 mx-10 pb-10">
         <hr className="h-[0.1px] bg-white/50 my-28" />
-        <div className="flex justify-between items-start">
-          <div className="flex flex-col justify-start w-1/3">
+        <div className="flex flex-col md:flex-row justify-between md:items-start gap-10 md:gap-0 items-center">
+          <div className="flex flex-col justify-start w-full md:w-1/3">
             <p className="m-0 mb-3">Subscribe to newsletter</p>
             <div className="relative z-0 w-full">
               <input
@@ -28,24 +28,24 @@ const Footer = () => {
               <p className="absolute -top-2 right-0">Subscribe</p>
             </div>
           </div>
-          <div className="flex flex-col justify-start gap-1">
+          <div className="flex flex-row md:flex-col justify-start gap-1">
             <Link href={"/"} className="text-white">
-              About Us
+              About Us <span className="md:hidden"> | </span>
             </Link>
             <Link href={"/"} className="text-white">
-              Services
+              Services <span className="md:hidden"> | </span>
             </Link>
             <Link href={"/"} className="text-white">
-              Work
+              Work <span className="md:hidden"> | </span>
             </Link>
             <Link href={"/"} className="text-white">
-              Team
+              Team <span className="md:hidden"> | </span>
             </Link>
             <Link href={"/"} className="text-white">
               Blog
             </Link>
           </div>
-          <div className="flex flex-col justify-start">
+          <div className="flex flex-col justify-start text-center md:text-left">
             <p className="m-0">Location</p>
             <p className="m-0 leading-7">
               No 4, Amman Nagar, Phase 3 ,<br /> Villankurichi, Coimbatore,
@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mt-20">
+        <div className="flex flex-col md:flex-row gap-10 text-center md:text-left justify-between mt-20">
           <div>Privacy Policy | Terms and Conditions</div>
           <div>Copyright @ 2023 AceAssured, All rights reserved.</div>
         </div>

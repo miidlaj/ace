@@ -4,9 +4,9 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="relative mx-52 flex justify-start items-center h-screen">
-        <div className="z-20 relative">
-          <h1 className=" text-[100px] capitalize font-new-york-large flex items-center font-thin">
+      <div className="relative md:mx-52 flex justify-start items-center h-screen">
+        <div className="z-20 relative text-center md:text-left">
+          <h1 className="text-[50px] md:text-[100px] capitalize font-new-york-large flex items-center font-thin">
             Stay ahead with our exclusive Insights
           </h1>
           <h5 className="text-[20px] capitalize leading-[30px] font-poppins font-thin">

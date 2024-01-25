@@ -4,8 +4,8 @@ import { CiSquareMinus, CiSquarePlus } from "react-icons/ci";
 const Expertise = () => {
   return (
     <>
-      <div className="h-screen mx-52 my-auto">
-        <h1 className="text-[50px] py-20">Our Expertise</h1>
+      <div className="h-screen md:mx-52 my-auto">
+        <h1 className="text-[50px] py-20 text-center md:text-left">Our Expertise</h1>
 
         <div className="">
           <div

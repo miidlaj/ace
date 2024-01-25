@@ -5,13 +5,13 @@ import React from "react";
 const GetInTouch = () => {
   return (
     <>
-      <div className="mx-52 my-auto">
-        <h1 className="text-[90px]">
+      <div className="md:mx-52 my-auto text-center md:text-left">
+        <h1 className="text-[45px] md:text-[90px] mb-20 md:mb-0">
           Let&apos;s Get In <br /> Touch
         </h1>
 
-        <div className="flex justify-between gap-5 items-start">
-          <div className="flex flex-col gap-10 justify-center text-[30px] w-1/2">
+        <div className="flex-col md:flex-row flex justify-between gap-5 items-center">
+          <div className="flex flex-col gap-10 justify-center text-[20px] md:text-[30px] w-1/2">
             <div className="flex flex-col gap-5">
               <a
                 href="mailto:info@aceassured.com"
@@ -48,8 +48,8 @@ const GetInTouch = () => {
               </a>
             </div>
           </div>
-          <div className="w-1/2 p-3">
-            <form action="" className="flex flex-col gap-5 text-[18px]">
+          <div className="w-1/2 p-3 text-left">
+            <form action="" className="flex flex-col gap-5 text-[15px] md:text-[18px]">
               <div className="relative z-0 w-full">
                 <input
                   name="email"

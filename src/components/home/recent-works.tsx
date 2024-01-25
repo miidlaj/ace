@@ -4,9 +4,9 @@ import React from "react";
 const RecentWorks = () => {
   return (
     <>
-      <div className="mx-52 flex flex-col gap-20 py-32">
+      <div className="md:mx-52 flex flex-col gap-20 py-32">
         <div className="text-center">
-          <h1 className="text-[90px]">Recent Works</h1>
+          <h1 className="text-[45px] md:text-[90px]">Recent Works</h1>
           <p className="text-[18px] font-poppins">
             Explore our portfolio, a quick glimpse into our most recent works in
             web and digital marketing solutions.
@@ -14,13 +14,22 @@ const RecentWorks = () => {
         </div>
 
         <div className="font-poppins flex flex-col gap-16">
-          <div className="flex justify-between">
+          <div className="flex md:flex-row md:gap-0 gap-10 flex-col justify-between">
             <div className="flex flex-col gap-7">
               <Image
                 src={"/Ishwarayan.png"}
                 alt="Ishwarayan"
                 height={547}
+                className="hidden md:flex"
                 width={465}
+              />
+
+              <Image
+                src={"/Ishwarayan.png"}
+                alt="Ishwarayan"
+                height={421}
+                width={365}
+                className="md:hidden"
               />
 
               <div className="flex justify-between">
@@ -46,7 +55,16 @@ const RecentWorks = () => {
                 src={"/tara-mockup.png"}
                 alt="Ishwarayan"
                 height={404}
+                className="hidden md:flex"
                 width={465}
+              />
+
+              <Image
+                src={"/tara-mockup.png"}
+                alt="Ishwarayan"
+                height={317}
+                width={365}
+                className="md:hidden"
               />
 
               <div className="flex justify-between">
@@ -69,13 +87,22 @@ const RecentWorks = () => {
             </div>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex md:flex-row md:gap-0 gap-10 flex-col justify-between">
             <div className="flex flex-col gap-7">
               <Image
                 src={"/hackit-mockup.png"}
                 alt="Jayson & jonson"
                 height={681}
                 width={1110}
+                className="hidden md:flex"
+              />
+
+              <Image
+                src={"/hackit-mockup.png"}
+                alt="Jayson & jonson"
+                height={223}
+                width={365}
+                className="md:hidden"
               />
 
               <div className="flex justify-between">
@@ -98,13 +125,21 @@ const RecentWorks = () => {
             </div>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex md:flex-row md:gap-0 gap-10 flex-col justify-between">
             <div className="flex flex-col gap-7">
               <Image
                 src={"/jayson&jonson.png"}
                 alt="Jayson & jonson"
                 height={547}
                 width={465}
+                className="hidden md:flex"
+              />
+              <Image
+                src={"/jayson&jonson.png"}
+                alt="Jayson & jonson"
+                height={436}
+                className="md:hidden"
+                width={365}
               />
 
               <div className="flex justify-between">
@@ -131,6 +166,15 @@ const RecentWorks = () => {
                 alt="The Prid"
                 height={404}
                 width={465}
+                className="hidden md:flex"
+              />
+
+              <Image
+                src={"/prid.png"}
+                alt="The Prid"
+                height={317}
+                width={365}
+                className="md:hidden"
               />
 
               <div className="flex justify-between">
