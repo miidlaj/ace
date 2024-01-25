@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-\import NavBar from "@/components/home/nav-bar";
+import NavBar from "@/components/home/nav-bar";
 import Banner from "@/components/home/banner";
 import Expertise from "@/components/home/expertise";
 import RecentWorks from "@/components/home/recent-works";
