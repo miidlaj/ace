@@ -62,8 +62,8 @@ const ThemeSwitcher = () => {
                 }`}
                 src={"/dark-mode.png"}
                 alt={"Moon"}
-                width={59}
-                height={29}
+                width={49}
+                height={24.5}
               />
 
               <Image
@@ -72,14 +72,14 @@ const ThemeSwitcher = () => {
                 }`}
                 src={"/light-mode.png"}
                 alt={"Sun"}
-                width={59}
-                height={29}
+                width={49}
+                height={24.5}
               />
             </div>
           </label>
         </div>
 
-        <h1 className="absolute md:-bottom-7 -bottom-6 font-thin font-nightcore-demo text-sm md:text-base rotate-180">
+        <h1 className="absolute md:-bottom-7 -bottom-4 font-thin font-nightcore-demo text-[12px] md:text-base rotate-180">
           Hey{" " + " "} Batman
         </h1>
       </div>
