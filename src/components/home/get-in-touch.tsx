@@ -38,15 +38,22 @@ const GetInTouch = () => {
               </p>
               <a
                 href="tel:917356140099"
-                className="text-primary cursor-pointer text-[14px]"
+                className="text-primary flex justify-start gap-2 items-center cursor-pointer text-[14px]"
               >
-                GET DIRECTION{" "}
+                GET DIRECTION
                 <Image
-                  className=""
+                  className="hidden dark:block"
                   height={10}
                   width={10}
                   alt=""
-                  src="/group-60173.svg"
+                  src="/white-logo.svg"
+                />
+                <Image
+                  className="dark:hidden"
+                  height={10}
+                  width={10}
+                  alt=""
+                  src="/dark-logo.svg"
                 />
               </a>
             </div>

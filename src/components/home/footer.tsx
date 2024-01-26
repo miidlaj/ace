@@ -25,7 +25,7 @@ const Footer = () => {
                 Your Email
               </label>
 
-              <p className="absolute -top-2 right-0">Subscribe</p>
+              <p className="absolute top-2 right-0">Subscribe</p>
             </div>
           </div>
           <div className="flex flex-row md:flex-col justify-start gap-1">

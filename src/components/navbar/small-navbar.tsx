@@ -27,7 +27,7 @@ export default function SmallNavbar() {
               },
               show: {
                 rotate: 45,
-                y: 5,
+                y: 10,
               },
             }}
             className="w-10 bg-primary h-[2px] block"
@@ -50,7 +50,7 @@ export default function SmallNavbar() {
               },
               show: {
                 rotate: -45,
-                y: -5,
+                y: -10,
               },
             }}
             className="w-10 bg-primary h-[2px] block"
