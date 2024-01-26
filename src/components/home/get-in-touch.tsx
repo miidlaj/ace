@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import AnimatedButton from "../common/AnimatedButton";
 
@@ -38,7 +37,7 @@ const GetInTouch = () => {
               </p>
               <a
                 href="tel:917356140099"
-                className="text-primary flex justify-start gap-2 items-center cursor-pointer text-[14px]"
+                className="text-primary flex md:justify-start justify-center gap-2 items-center cursor-pointer text-[14px]"
               >
                 GET DIRECTION
                 <Image

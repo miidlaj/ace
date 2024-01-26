@@ -4,10 +4,8 @@ import { opacity, expand } from "./anim";
 
 export default function Stairs({
   children,
-  backgroundColor,
 }: {
   children: ReactNode;
-  backgroundColor: string;
 }) {
   const anim = (variants: any, custom: number | null = null) => {
     return {
@@ -21,7 +19,7 @@ export default function Stairs({
 
   const nbOfColumns = 5;
   return (
-    <div className="page stairs z-50 relative" style={{ backgroundColor }}>
+    <div className="page stairs z-50 relative" >
       <motion.div {...anim(opacity)} className="transition-background" />
       <div className="transition-container">
         {[...Array(nbOfColumns)].map((_, i) => {

@@ -3,9 +3,11 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <div className="h-screen md:mx-52 mx-10 flex flex-col lg:flex-row lg:justify-between justify-around items-center gap-0">
+      <div className="min-h-screen md:mx-52 mx-10 flex flex-col lg:flex-row lg:justify-between justify-around items-center gap-0">
         <div className="flex flex-col gap-5 text-center lg:text-left">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[100px] font-new-york-large">About Us</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[100px] font-new-york-large">
+            About Us
+          </h1>
 
           <p className="text-sm md:text-base font-poppins">
             At Ace Assured, we&apos;re passionate about helping small and

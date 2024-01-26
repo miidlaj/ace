@@ -7,36 +7,36 @@ import RecentWorks from "@/components/home/recent-works";
 import GetInTouch from "@/components/home/get-in-touch";
 import Footer from "@/components/home/footer";
 import AboutUs from "@/components/home/about-us";
+import Slide from "@/components/animation/scroll-animation";
 import ScrollProgress from "@/components/animation/scroll-progress";
 import Stairs from "@/components/animation";
-import ScrollAnimate from "@/components/animation/scroll-animation";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <Stairs backgroundColor={"#fff"}>
+      <Stairs>
         <ScrollProgress>
           <div className="bg-secondary text-primary">
             <NavBar />
-
-            <ScrollAnimate>
+            <Slide delay={0.3}>
               <Banner />
-            </ScrollAnimate>
-            <ScrollAnimate>
+            </Slide>
+            <Slide delay={0.3}>
               <AboutUs />
-            </ScrollAnimate>
-            <ScrollAnimate>
+            </Slide>
+            <Slide delay={0.3}>
               <Expertise />
-            </ScrollAnimate>
-            <RecentWorks />
-            <ScrollAnimate>
+            </Slide>
+            <Slide delay={0.3}>
+              <RecentWorks />
+            </Slide>
+            <Slide delay={0.3}>
               <GetInTouch />
-            </ScrollAnimate>
-            <ScrollAnimate>
-              <Footer />
-            </ScrollAnimate>
+            </Slide>
+
+            <Footer />
           </div>
         </ScrollProgress>
       </Stairs>
