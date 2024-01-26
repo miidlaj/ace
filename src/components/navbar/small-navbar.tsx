@@ -18,7 +18,7 @@ export default function SmallNavbar() {
           initial="hide"
           animate={mobileNav ? "show" : "hide"}
           onClick={toggleMobileNav}
-          className="flex flex-col space-y-1 bg-transparent relative z-30"
+          className="flex flex-col space-y-2 bg-transparent relative z-30"
         >
           <motion.span
             variants={{
@@ -30,7 +30,7 @@ export default function SmallNavbar() {
                 y: 5,
               },
             }}
-            className="w-10 bg-primary h-px block"
+            className="w-10 bg-primary h-[2px] block"
           ></motion.span>
           <motion.span
             variants={{
@@ -41,7 +41,7 @@ export default function SmallNavbar() {
                 opacity: 0,
               },
             }}
-            className="w-10 bg-primary h-px block"
+            className="w-10 bg-primary h-[2px] block"
           ></motion.span>
           <motion.span
             variants={{
@@ -53,7 +53,7 @@ export default function SmallNavbar() {
                 y: -5,
               },
             }}
-            className="w-10 bg-primary h-px block"
+            className="w-10 bg-primary h-[2px] block"
           ></motion.span>
         </motion.div>
         <AnimatePresence>

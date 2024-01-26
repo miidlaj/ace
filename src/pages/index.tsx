@@ -32,7 +32,7 @@ export default function Home() {
             </ScrollAnimate>
             <RecentWorks />
             <ScrollAnimate>
-              <GetInTouch />/
+              <GetInTouch />
             </ScrollAnimate>
             <ScrollAnimate>
               <Footer />

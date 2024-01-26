@@ -8,20 +8,39 @@ const NavBar = () => {
     <div className="text-primary w-full h-full bg-secondary">
       <nav className="flex justify-between md:gap-20 items-center w-full py-2">
         <div className="md:ml-10 lg:ml-20 xl:ml-32 2xl:ml-52 ml-5">
-          <Image
-            className="hidden dark:block"
-            src="/ace-logo-white.svg"
-            width={110}
-            height={64}
-            alt="logo"
-          />
-          <Image
-            className="dark:hidden"
-            src="/ace-logo-green.svg"
-            width={110}
-            height={64}
-            alt="logo"
-          />
+          <div className="hidden md:block">
+            <Image
+              className="hidden dark:block"
+              src="/ace-logo-white.svg"
+              width={110}
+              height={64}
+              alt="logo"
+            />
+            <Image
+              className="dark:hidden"
+              src="/ace-logo-green.svg"
+              width={110}
+              height={64}
+              alt="logo"
+            />
+          </div>
+
+          <div className="md:hidden">
+            <Image
+              className="hidden dark:block"
+              src="/ace-logo-white.svg"
+              width={80}
+              height={47}
+              alt="logo"
+            />
+            <Image
+              className="dark:hidden"
+              src="/ace-logo-green.svg"
+              width={80}
+              height={47}
+              alt="logo"
+            />
+          </div>
         </div>
 
         <div className="justify-end md:mx-16 md:gap-5 lg:gap-10 xl:gap-14 2xl:gap-20 w-full text-[20px] flex">

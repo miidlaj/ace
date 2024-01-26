@@ -34,32 +34,55 @@ const ThemeSwitcher = () => {
             className="hidden"
           />
           <label htmlFor="toggleSwitch" className={`relative cursor-pointer`}>
-            <Image
-              className={`absolute top-0 left-0 transform transition duration-300 ease-in-out ${
-                isDarkMode ? "opacity-100 " : "opacity-0 "
-              }`}
-              src={"/dark-mode.png"}
-              alt={"Moon"}
-              width={70}
-              height={35}
-            />
+            <div className="hidden md:block">
+              <Image
+                className={`absolute top-0 left-0 transform transition duration-300 ease-in-out ${
+                  isDarkMode ? "opacity-100 " : "opacity-0 "
+                }`}
+                src={"/dark-mode.png"}
+                alt={"Moon"}
+                width={70}
+                height={35}
+              />
 
-            <Image
-              className={`absolute top-0 left-0 transform transition duration-300 ease-in-out ${
-                isDarkMode ? "opacity-0 " : "opacity-100"
-              }`}
-              src={"/light-mode.png"}
-              alt={"Sun"}
-              width={70}
-              height={35}
-            />
+              <Image
+                className={`absolute top-0 left-0 transform transition duration-300 ease-in-out ${
+                  isDarkMode ? "opacity-0 " : "opacity-100"
+                }`}
+                src={"/light-mode.png"}
+                alt={"Sun"}
+                width={70}
+                height={35}
+              />
+            </div>
+            <div className="md:hidden">
+              <Image
+                className={`absolute top-2 left-0 transform transition duration-300 ease-in-out ${
+                  isDarkMode ? "opacity-100 " : "opacity-0 "
+                }`}
+                src={"/dark-mode.png"}
+                alt={"Moon"}
+                width={59}
+                height={29}
+              />
+
+              <Image
+                className={`absolute top-2 left-0 transform transition duration-300 ease-in-out ${
+                  isDarkMode ? "opacity-0 " : "opacity-100"
+                }`}
+                src={"/light-mode.png"}
+                alt={"Sun"}
+                width={59}
+                height={29}
+              />
+            </div>
           </label>
         </div>
 
-        <h1 className="absolute -bottom-7 font-thin font-nightcore-demo text-base rotate-180">Hey{" " + " "} Batman</h1>
-
+        <h1 className="absolute md:-bottom-7 -bottom-6 font-thin font-nightcore-demo text-sm md:text-base rotate-180">
+          Hey{" " + " "} Batman
+        </h1>
       </div>
-
     </>
   );
 };

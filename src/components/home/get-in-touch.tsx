@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import AnimatedButton from "../common/AnimatedButton";
 
 const GetInTouch = () => {
   return (
@@ -51,7 +52,10 @@ const GetInTouch = () => {
             </div>
           </div>
           <div className="w-1/2 p-3 text-left">
-            <form action="" className="flex flex-col gap-5 text-[15px] md:text-[18px]">
+            <form
+              action=""
+              className="flex flex-col gap-5 text-[15px] md:text-[18px]"
+            >
               <div className="relative z-0 w-full">
                 <input
                   name="email"
@@ -96,12 +100,13 @@ const GetInTouch = () => {
                 </label>
               </div>
 
-              <button
+              <AnimatedButton
+                whileTap={{ scale: 0.85 }}
                 type="button"
                 className="inline-flex items-center justify-center px-4 font-medium py-3 text-sm my-10 w-32 leading-6 text-secondary bg-primary border border-transparent rounded-full hover:bg-primary/90 focus:outline-none transform transition-colors duration-300 ease-in-out"
               >
                 SEND NOW
-              </button>
+              </AnimatedButton>
             </form>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import AnimatedButton from "../common/AnimatedButton";
 
 const RecentWorks = () => {
   return (
@@ -40,16 +41,27 @@ const RecentWorks = () => {
                   <p className="text-[14px]">Animation</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
+                <AnimatedButton
+                  whileTap={{ scale: 0.85 }}
+                  className="cursor-pointer flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full"
+                >
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
-                    className=""
+                    className="hidden dark:block"
                     height={13}
                     width={13}
                     alt=""
-                    src="/group-60173.svg"
+                    src="/white-logo.svg"
                   />
-                </button>
+
+                  <Image
+                    className="dark:hidden"
+                    height={13}
+                    width={13}
+                    alt=""
+                    src="/dark-logo.svg"
+                  />
+                </AnimatedButton>
               </div>
             </div>
             <div className="flex flex-col gap-7">
@@ -75,16 +87,27 @@ const RecentWorks = () => {
                   <p className="text-[14px]">Product Design</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline border-none outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
+                <AnimatedButton
+                  whileTap={{ scale: 0.85 }}
+                  className="cursor-pointer flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full"
+                >
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
-                    className=""
+                    className="hidden dark:block"
                     height={13}
                     width={13}
                     alt=""
-                    src="/group-60173.svg"
+                    src="/white-logo.svg"
                   />
-                </button>
+
+                  <Image
+                    className="dark:hidden"
+                    height={13}
+                    width={13}
+                    alt=""
+                    src="/dark-logo.svg"
+                  />
+                </AnimatedButton>
               </div>
             </div>
           </div>
@@ -121,16 +144,27 @@ const RecentWorks = () => {
                   <p className="text-[14px]">Product Design</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center outline border-none outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
+                <AnimatedButton
+                  whileTap={{ scale: 0.85 }}
+                  className="cursor-pointer flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full"
+                >
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
-                    className=""
+                    className="hidden dark:block"
                     height={13}
                     width={13}
                     alt=""
-                    src="/group-60173.svg"
+                    src="/white-logo.svg"
                   />
-                </button>
+
+                  <Image
+                    className="dark:hidden"
+                    height={13}
+                    width={13}
+                    alt=""
+                    src="/dark-logo.svg"
+                  />
+                </AnimatedButton>
               </div>
             </div>
           </div>
@@ -158,16 +192,27 @@ const RecentWorks = () => {
                   <p className="text-[14px]">User experience</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
+                <AnimatedButton
+                  whileTap={{ scale: 0.85 }}
+                  className="cursor-pointer flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full"
+                >
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
-                    className=""
+                    className="hidden dark:block"
                     height={13}
                     width={13}
                     alt=""
-                    src="/group-60173.svg"
+                    src="/white-logo.svg"
                   />
-                </button>
+
+                  <Image
+                    className="dark:hidden"
+                    height={13}
+                    width={13}
+                    alt=""
+                    src="/dark-logo.svg"
+                  />
+                </AnimatedButton>
               </div>
             </div>
             <div className="flex flex-col gap-7">
@@ -193,16 +238,27 @@ const RecentWorks = () => {
                   <p className="text-[14px]">Art Direction</p>
                 </div>
 
-                <button className="flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full">
+                <AnimatedButton
+                  whileTap={{ scale: 0.85 }}
+                  className="cursor-pointer flex font-new-york-large gap-2 items-center border-none outline outline-primary outline-2 bg-transparent text-primary py-2 px-4 rounded-full"
+                >
                   <span className="capitalize text-[18px]">Case Study</span>
                   <Image
-                    className=""
+                    className="hidden dark:block"
                     height={13}
                     width={13}
                     alt=""
-                    src="/group-60173.svg"
+                    src="/white-logo.svg"
                   />
-                </button>
+
+                  <Image
+                    className="dark:hidden"
+                    height={13}
+                    width={13}
+                    alt=""
+                    src="/dark-logo.svg"
+                  />
+                </AnimatedButton>
               </div>
             </div>
           </div>
