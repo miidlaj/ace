@@ -1,43 +1,31 @@
-"use client"
-import { motion, useInView, useAnimation } from "framer-motion";
-import { useRef, useEffect } from "react";
+"use client";
 
-type props = {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-};
+import { useScroll, motion, useTransform } from "framer-motion";
+import React, { ReactNode } from "react";
 
-export default function Slide({ children, delay, className }: props) {
-  const ref = useRef(null);
-  const isInview = useInView(ref, { once: true });
-  const controls = useAnimation();
+const ScrollAnimate = ({ children }: { children: ReactNode }) => {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["01", "1.33 1"],
+  });
 
-  useEffect(() => {
-    if (isInview) {
-      controls.start("visible");
-    }
-  }, [isInview]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      variants={{
-        hidden: { opacity: 0, translateX: 90 },
-        visible: { opacity: 1, translateX: 0 },
-      }}
-      transition={{
-        type: "spring",
-        duration: 0.2,
-        damping: 8,
-        delay: delay,
-        stiffness: 100,
-      }}
-      initial="hidden"
-      animate={controls}
-      className={className}
-    >
-      {children}
-    </motion.div>
+    <>
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scaleProgress,
+          opacity: opacityProgress,
+        }}
+      >
+        {children}
+      </motion.div>
+    </>
   );
-}
+};
+
+export default ScrollAnimate;
