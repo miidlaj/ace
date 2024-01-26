@@ -19,9 +19,8 @@ export default function Home() {
       <Stairs backgroundColor={"#fff"}>
         <ScrollProgress>
           <div className="bg-secondary text-primary">
-            <ScrollAnimate>
-              <NavBar />
-            </ScrollAnimate>
+            <NavBar />
+
             <ScrollAnimate>
               <Banner />
             </ScrollAnimate>
@@ -31,7 +30,7 @@ export default function Home() {
             <ScrollAnimate>
               <Expertise />
             </ScrollAnimate>
-              <RecentWorks />
+            <RecentWorks />
             <ScrollAnimate>
               <GetInTouch />/
             </ScrollAnimate>
