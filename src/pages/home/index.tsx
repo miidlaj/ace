@@ -20,7 +20,7 @@ export default function Home() {
         <ScrollProgress>
           <div className="bg-secondary text-primary">
             <NavBar />
-            <Slide delay={0.3}>
+            <Slide delay={0.6}>
               <Banner />
             </Slide>
             <Slide delay={0.3}>
